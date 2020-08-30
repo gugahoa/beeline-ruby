@@ -9,11 +9,11 @@ require "honeycomb/propagation/honeycomb"
 module Honeycomb
   # Parse trace headers
   module PropagationParser
-    include HoneycombPropagation::UnmarshalTraceContext
+    include W3CPropagation::UnmarshalTraceContext
   end
 
   # Serialize trace headers
   module PropagationSerializer
-    include HoneycombPropagation::MarshalTraceContext
+    include W3CPropagation::MarshalTraceContext
   end
 end
